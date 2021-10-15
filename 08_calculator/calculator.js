@@ -1,12 +1,18 @@
-const add = function() {
-	
+const add = function(a , b) {
+	 let sum = 0;
+   sum = a + b;
+   return sum;
 };
 
-const subtract = function() {
-	
+const subtract = function(a,b) {
+	let sum = 0;
+  sum = a - b;
+  return sum;
 };
 
-const sum = function() {
+const sum = function(array) {
+  sum = 0;
+  array.forEach(element => sum + elelment);
 	
 };
 
