@@ -11,21 +11,35 @@ const subtract = function(a,b) {
 };
 
 const sum = function(array) {
-  sum = 0;
-  array.forEach(element => sum + elelment);
+  let sum = 0;
+  array.forEach(element => sum += element);
+  return sum;
 	
 };
 
-const multiply = function() {
+const multiply = function(array) {
+  let sum = 1;
+  array.forEach(element => sum *= element);
+  return sum;
 
 };
 
-const power = function() {
-	
+const power = function(a,b) {
+	let sum = Math.pow(a,b);
+  return sum;
 };
 
-const factorial = function() {
-	
+const factorial = function(facts) {
+  let sum = 1;
+  if (facts == 0 || facts == 1){
+    sum = 1;
+  } 
+  while (facts > 1) {
+      sum *=facts;
+      facts -=1;
+    
+  }
+	return sum;
 };
 
 // Do not edit below this line
